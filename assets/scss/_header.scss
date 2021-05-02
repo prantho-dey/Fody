@@ -1,0 +1,44 @@
+.header-area {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px 71px;
+    padding-bottom: 238px;
+    position: relative;
+
+    .header-img{
+        position: absolute;
+        content: "";
+        width: 645px;
+        height: 454px;
+        right: 0;
+        top: 71px;
+    }
+
+    .header-content{
+
+        h2 {
+            font-size: 93px;
+            color: #232323;
+            line-height: 110px;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            font-size: 24px;
+            line-height: 38px;
+            color: #7E7E7E;
+            padding-top: 3px;
+            margin: 0;
+        }
+        .button {
+            color: #fff;
+            background-color: $theme-color;
+            padding: 15px 30px;
+            display: inline-block;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+    }
+}

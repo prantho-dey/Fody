@@ -1,0 +1,105 @@
+.story-area {
+    position: relative;
+
+    .story-content {
+
+        span {
+            font-size: 24px;
+            color: $theme-color;
+            letter-spacing: 4px;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+        h3{
+            font-size: 60px;
+            line-height: 74px;
+            text-transform: capitalize;
+            color: #232323;
+            padding-top: 10px;
+            padding-bottom: 60px;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+
+            li {
+                display: inline-block;
+                font-size: 28px;
+                color: $theme-color;
+                padding-right: 10px;
+            }
+        }
+        p {
+            font-size: 22px;
+            line-height: 38px;
+            color: #7E7E7E;
+            padding: 35px 0;
+            padding-bottom: 30px;
+        }
+        a {
+            font-size: 24px;
+            color: $theme-color;
+            line-height: 26px;
+
+            span {
+                display: block;
+                font-size: 18px;
+                text-transform: capitalize;
+                color: #3F3232;
+                margin-top: 7px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+.story-position {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	left: 570px;
+    top: 0;
+    @include transition(.5s);
+    animation: story-1 5.5s linear infinite;
+
+    @keyframes story-1 {
+        0% {
+            right: 121px;
+        }
+        50%{
+           right: 300px;
+           transform: rotate(-360deg);
+           
+        }
+        100%{
+            right: 121px;
+        }
+    }
+}
+
+.story-position-2 {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	left: 570px;
+    bottom: 0;
+    @include transition(.5s);
+    animation: story-2 5.5s linear infinite;
+
+    @keyframes story-2 {
+        0% {
+            right: 121px;
+        }
+        50%{
+           right: 300px;
+           transform: rotateY(-360deg);
+           
+        }
+        100%{
+            right: 121px;
+        }
+    }
+}

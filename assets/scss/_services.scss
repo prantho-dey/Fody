@@ -1,0 +1,88 @@
+.section-title {
+    span {
+        font-size: 24px;
+        color: #F79F24;
+        letter-spacing: 4px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    h3{
+        font-size: 60px;
+        line-height: 70px;
+        text-transform: capitalize;
+        color: #232323;
+        padding: 10px 0;
+        margin: 0;
+
+    }
+}
+
+
+.service-area {
+    background-color: #FFFCF4;
+    position: relative;
+    margin-left: 85px;
+    .sengle-services {
+        display: flex;
+
+        .services-img {
+            width: 90px;
+            height: 60px;
+            margin-right: 30px;
+        }
+        .services-content {
+            margin-bottom: 50px;
+            h4 {
+                font-size: 36px;
+                line-height: 38px;
+                color: #443B3C;
+                margin: 0;
+                padding-bottom: 8px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 38px;
+                color: #7E7E7E;
+                width: 277px;
+                height: 108px;
+                margin: 0;
+                padding: 0;
+            }
+            
+        }
+    }
+    .services-right-img {
+        position: absolute;
+        top: -277px;
+        right: 0;
+        width: 603px;
+        height: 884px;
+    }
+
+
+}
+.services-position-img {
+	position: absolute;
+	width: 270px;
+	height: 157px;
+    left: 50%;
+    top: 144px;
+    transform: translateX(-50%);
+    animation: service 5.5s linear infinite;
+
+    @keyframes service {
+        0% {
+            top: 200px;
+            opacity: 1;
+        }
+        50%{
+            top: 400px;
+            opacity: .6;
+        }
+        100%{
+            top: 600px;
+            opacity: 0;
+        }
+    }
+}
+
